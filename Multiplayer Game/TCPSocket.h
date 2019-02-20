@@ -11,7 +11,7 @@ public:
 	int								Send(void* inData, int inLen);
 	int								Receive(void* inBuffer, int inLen);
 private:
-	friend class SocktUtil;
+	friend class SocketUtil;
 	TCPSocket(SOCKET inSocket) : mSocket(inSocket) {}
 
 	SOCKET mSocket;

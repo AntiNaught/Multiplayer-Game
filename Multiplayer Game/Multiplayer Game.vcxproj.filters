@@ -21,6 +21,18 @@
     <ClInclude Include="SocketAddress.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SocketAddressFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketUtil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TCPSocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UDPSocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -30,6 +42,18 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="SocketAddress.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketAddressFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketUtil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TCPSocket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UDPSocket.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -15,6 +15,11 @@ int TCPSocket::Connect(const SocketAddress & inAddress)
 	return NO_ERROR;
 }
 
+int TCPSocket::Bind(const SocketAddress & inToAddress)
+{
+	return 0;
+}
+
 int TCPSocket::Listen(int inBackLog)
 {
 	int err = listen(mSocket, inBackLog);
@@ -52,4 +57,9 @@ int TCPSocket::Send(void * inData, int inLen)
 		return -SocketUtil::GetLastError();
 	}
 	return bytesReceiveCount;
+}
+
+int TCPSocket::Receive(void * inBuffer, int inLen)
+{
+	return 0;
 }

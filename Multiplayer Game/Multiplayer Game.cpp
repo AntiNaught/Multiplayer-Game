@@ -5,36 +5,20 @@
 #include <iostream>
 
 // 初始化一个地址
-void Test()
-{
-	sockaddr_in myAddr;
-	memset(myAddr.sin_zero, 0, sizeof(myAddr.sin_zero));		//memset(void *s, int ch,size_t n);中ch实际范围应该在0~~255，因为该函数只能取ch的后八位赋值给你所输入的范围的每个字节
-	myAddr.sin_family = AF_INET;								//协议族
-	myAddr.sin_port = htons(80);								//平台字节序转为网络字节序
-	myAddr.sin_addr.S_un.S_un_b.s_b1 = 65;
-	myAddr.sin_addr.S_un.S_un_b.s_b2 = 254;
-	myAddr.sin_addr.S_un.S_un_b.s_b3 = 248;
-	myAddr.sin_addr.S_un.S_un_b.s_b4 = 180;
-}
-
-class BB
-{};
-
-void Test2(BB* b)
-{
-}
-
-void Test3(BB& b)
-{
-}
+//void Test()
+//{
+//	sockaddr_in myAddr;
+//	memset(myAddr.sin_zero, 0, sizeof(myAddr.sin_zero));		//memset(void *s, int ch,size_t n);中ch实际范围应该在0~~255，因为该函数只能取ch的后八位赋值给你所输入的范围的每个字节
+//	myAddr.sin_family = AF_INET;								//协议族
+//	myAddr.sin_port = htons(80);								//平台字节序转为网络字节序
+//	myAddr.sin_addr.S_un.S_un_b.s_b1 = 65;
+//	myAddr.sin_addr.S_un.S_un_b.s_b2 = 254;
+//	myAddr.sin_addr.S_un.S_un_b.s_b3 = 248;
+//	myAddr.sin_addr.S_un.S_un_b.s_b4 = 180;
+//}
 
 int main()
 {
-	BB newB;
-	BB* newBPtr = &newB;
-	Test2(&newB);
-	Test3(newB);
-
     std::cout << "Hello World!\n"; 
 }
 
