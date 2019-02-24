@@ -11,8 +11,9 @@ private:
 
 	size_t GetSize() const { return sizeof(sockaddr); }
 protected:
-
 public:
+	SocketAddress();
+	~SocketAddress();
 	// ipv4
 	SocketAddress(uint32_t inAddress, uint16_t inPort);
 	SocketAddress(const sockaddr& inSockAddr);

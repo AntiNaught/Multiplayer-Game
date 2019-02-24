@@ -5,6 +5,14 @@ sockaddr_in * SocketAddress::GetAsSockAddrIn()
 	return reinterpret_cast<sockaddr_in*>(&mSockAddr);
 }
 
+SocketAddress::SocketAddress()
+{
+}
+
+SocketAddress::~SocketAddress()
+{
+}
+
 SocketAddress::SocketAddress(uint32_t inAddress, uint16_t inPort)
 {
 	GetAsSockAddrIn()->sin_family = AF_INET;

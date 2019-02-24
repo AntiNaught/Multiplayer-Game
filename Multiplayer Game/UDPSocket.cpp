@@ -53,10 +53,6 @@ int UDPSocket::SetNonBlockingMode(bool inShouldBeNonBlocking)
 		SocketUtil::ReportError("UDPSocket::SetNonBlockingMode");
 		return SocketUtil::GetLastError();
 	}
-	else
-	{
-		return NO_ERROR;
-	}
 }
 
 UDPSocket::~UDPSocket()
