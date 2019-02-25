@@ -7,7 +7,7 @@ int SocketUtil::Select(const vector<TCPSocketPtr>* inReadSet, vector<TCPSocketPt
 
 	fd_set *readPtr = FillSetFromVector(read, inReadSet);
 	fd_set *writePtr = FillSetFromVector(write, inWriteSet);
-	FD_SET* exceptPtr = FillSetFromVector(except, inExceptSet);
+	fd_set *exceptPtr = FillSetFromVector(except, inExceptSet);
 
 	int toRet = select(0, readPtr, writePtr, exceptPtr, nullptr);
 

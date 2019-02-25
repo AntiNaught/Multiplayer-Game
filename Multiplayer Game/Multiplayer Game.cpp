@@ -23,9 +23,15 @@ int main()
 }
 
 // 处理收到的数据
-void ProcessReceiveData();
+void ProcessReceiveData()
+{
+	std::cout << "ProcessReceiveData" << endl;
+}
 // 进行一帧的游戏
-void DoGameFrame();
+void DoGameFrame()
+{
+	std::cout << "One Frame Game" << endl;
+}
 
 // 使用非阻塞 socket 的游戏循环
 void DoGameLoop()
